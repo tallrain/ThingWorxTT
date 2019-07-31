@@ -1,0 +1,5 @@
+Display uploaded PDF:
+http://<host:port>/Thingworx/FileRepositoryDownloader?download-repository=<YourThingWorxRepository>&directRender=true&download-path=/your_pdf.pdf
+
+Display uploaded jpg:
+http://<host:port>/Thingworx/FileRepositoryDownloader?download-repository=<YourThingWorxRepository>&directRender=true&download-path=/your_jpg.jpg
