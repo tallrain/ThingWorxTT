@@ -1,0 +1,5 @@
+1. Create user for login and view.
+2. Create AppKey for the user.
+3. Grant Permission of Mashup's Visibility and Run Time to user.
+4. Use below URL to show Mashup from anywhere:
+http://<ThingWorxServer>:<ThingWorxPort>/Thingworx/Mashups/<MashupName>?appKey=<AppKeyHere>&x-thingworx-session=true
