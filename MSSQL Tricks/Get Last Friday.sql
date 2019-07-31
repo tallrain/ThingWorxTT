@@ -1,0 +1,17 @@
+CREATE FUNCTION [dbo].[GET_LAST_FRIDAY] ()  
+RETURNS int  
+WITH EXECUTE AS CALLER  
+AS  
+BEGIN  
+	 DECLARE @LAST_FRI int;
+	 DECLARE @YYYY int;
+	 DECLARE @MM int;
+	 DECLARE @DD int;
+	 DECLARE @DT DATETIME;	 
+	 SET @DT = dateadd(week,datediff(week,0,GETDATE()-7),4);
+	 SET @YYYY = YEAR(@DT);
+	 SET @MM = MONTH(@DT);
+	 SET @DD = DAY(@DT);
+	 SET @LAST_FRI = @YYYY*10000 + @MM*100 + @DD;
+	 RETURN(@LAST_FRI);
+END;  
