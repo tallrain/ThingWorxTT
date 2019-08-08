@@ -40,7 +40,7 @@ for (var x=0; x < tableLength; x++) {
         fd2[j] = tmp3;
     }
     
-    for (var k=1; k<fd2.length; k++) {
+    for (var k=1; k<fd.length; k++) {
         tmp = tmp + ',' + fd2[k];
     }    
     tmp = tmp + ' \n';
