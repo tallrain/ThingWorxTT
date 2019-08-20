@@ -1,0 +1,2 @@
+1. Take NO Capital for Column names of Database Query, because ProgreSQL will disable Capital characters automatically.
+2. While defining Data Shape of InfoTable of Database Query Output, make sure the field names are same as Query columns, otherwise the List widget will show blank.
