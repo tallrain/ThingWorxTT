@@ -8,7 +8,7 @@
 2. Monitor Device(PLC):
 1) In Controls Advisor of MFG Apps, click "Discover Devices", when it's done, Thingworx will create a Thing for each Kepware device, 
   device name = Gateway Name + "_" + Channel Name + "." + Device Name, 
-  with template of PTC>Factory.DeviceThingTemplate,
+  with template of PTC.Factory.DeviceThingTemplate,
   and IndustrialThing = Industrial Connection, 
   and OPCDAThingName = Gateway Server in MFG Apps
   (IndustrialThing can only bind with normal Tags, OPCDAThingName can bind system tags)
