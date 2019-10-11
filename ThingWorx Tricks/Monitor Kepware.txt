@@ -1,6 +1,10 @@
 1. Monitor Kepware Server:
 1) In Controls Advisor of MFG Apps, add Gateway Server.
-2) Thingworx will create Industrial Connection accordingly, with suffix of -GW for Thing Name.
+2) Thingworx will create Industrial Connection accordingly, with suffix of -GW for Thing Name, its template is IndustrialGateway.
 3) The property of isConnected of Industrial Connection can be used to identify status of Kepware Server.
 
 2. Monitor Device(PLC):
+1) In Controls Advisor of MFG Apps, click "Discover Devices", when it's done, Thingworx will create a Thing for each Kepware device, device name = Gateway Name + "_" + Channel Name + "." + Device Name, with template of PTC>Factory.DeviceThingTemplate.
+2) The property of Enabled means device is working, the property of ErrorState means device is not working normally.
+
+
