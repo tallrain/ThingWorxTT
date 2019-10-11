@@ -9,11 +9,9 @@
 1) In Controls Advisor of MFG Apps, click "Discover Devices", when it's done, Thingworx will create a Thing for each Kepware device, 
   device name = Gateway Name + "_" + Channel Name + "." + Device Name, 
   with template of PTC.Factory.DeviceThingTemplate,
-  and IndustrialThing = Industrial Connection, 
-  and OPCDAThingName = Gateway Server in MFG Apps
-  (IndustrialThing can only bind with normal Tags, OPCDAThingName can bind system tags)
+  and its IndustrialThing = Industrial Connection, 
+  and its OPCDAThingName = Gateway Server in MFG Apps
+  (IndustrialThing can only bind with normal Tags, OPCDAThingName can bind with system tags)
 2) The property of Enabled means device is working, the property of ErrorState means device is not working normally.
   Enabled = device._System._Enabled
   ErrorState = device._System._Error
-
-
