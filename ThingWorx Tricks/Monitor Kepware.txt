@@ -1,0 +1,6 @@
+1. Monitor Kepware Server:
+1) In Controls Advisor of MFG Apps, add Gateway Server.
+2) Thingworx will create Industrial Connection accordingly, with suffix of -GW for Thing Name.
+3) The property of isConnected of Industrial Connection can be used to identify status of Kepware Server.
+
+2. Monitor Device(PLC):
