@@ -1,0 +1,4 @@
+1. Create Tab
+2. Create Contained Mashup for each Tab
+3. Create service to count and reset Tab ID
+4. Bind Counter to SelectedTabName
