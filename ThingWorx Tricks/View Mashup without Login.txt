@@ -3,3 +3,7 @@
 3. Grant Permission of Mashup's Visibility and Run Time to user.
 4. Use below URL to show Mashup from anywhere:
 http://<ThingWorxServer>:<ThingWorxPort>/Thingworx/Mashups/<MashupName>?appKey=<AppKeyHere>&x-thingworx-session=true
+or
+http://<ThingWorxServer>:<ThingWorxPort>/Thingworx/Runtime/index.html?mashup=<MashupName>&appKey=<AppKeyHere>&x-thingworx-session=true
+
+Please be noted: Use ? instead of #
