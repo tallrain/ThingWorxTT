@@ -11,7 +11,7 @@
     SD - Standard Deviation
     CPU - Process Capability Upper
     CPL - Process Capability Lower
-    CPK - Process Capability Key
+    CPK - Process Capability Index
 
 // Get USL&LSL
 var USL = spcTable.rows[0].USL;
