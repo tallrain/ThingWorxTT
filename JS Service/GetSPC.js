@@ -9,15 +9,15 @@
     Sum - Summary
     Avg - Average
     SD - Standard Deviation
-    CPU - Cpu
-    CPL - Cpl
-    CPK - Cpk
+    CPU - Process Capability Upper
+    CPL - Process Capability Lower
+    CPK - Process Capability Key
 
 // Get USL&LSL
 var USL = spcTable.rows[0].USL;
 var LSL = spcTable.rows[0].LSL;
-logger.info("USL="+USL);
-logger.info("LSL="+LSL);
+//logger.info("USL="+USL);
+//logger.info("LSL="+LSL);
 
 // Get Sum
 var sum = 0.0;
@@ -31,12 +31,12 @@ for (var x=0; x < tableLength; x++) {
     sum = sum + row.SPC1;
 }
 //logger.info("x="+x);
-logger.info("sum="+sum);
+//logger.info("sum="+sum);
 //var result = sum;
 
 // Get Average
 var u = sum / tableLength;
-logger.info("u="+u);
+//logger.info("u="+u);
 
 // Get SD
 var sd = 0;
@@ -45,15 +45,15 @@ for (x=0; x < tableLength; x++) {
 }
 sd = sd/tableLength;
 sd = Math.sqrt(sd);
-logger.info("sd="+sd);
+//logger.info("sd="+sd);
 
 // Get CPU
 var cpu = (USL-u)/(3*sd);
-logger.info("cpu="+cpu);
+//logger.info("cpu="+cpu);
 
 // Get CPL
 var cpl = (u-LSL)/(3*sd);
-logger.info("cpl="+cpl);
+//logger.info("cpl="+cpl);
 
 // Get CPK
 var cpk = 0;
@@ -62,7 +62,7 @@ if(cpu < cpl) {
 } else {
 	cpk = cpl;
 }
-logger.info("cpk="+cpk);
+//logger.info("cpk="+cpk);
 
 // Output data
 var params = {
@@ -75,3 +75,4 @@ var spcOut = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params
 spcOut.AddRow({Sum: sum, Avg: u, SD: sd, USL: USL, LSL:LSL, CPU: cpu, CPL: cpl, CPK: cpk});
 
 var result = spcOut;
+
