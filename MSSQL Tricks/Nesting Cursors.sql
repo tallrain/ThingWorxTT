@@ -1,10 +1,14 @@
 -- Normally, we use system variable @@FETCH_STATUS to check Cursor loop
+DECLARE myCursor CURSOR FOR	
+SELECT fields FROM Table;
 OPEN myCursor;
 FETCH NEXT FROM myCursor INTO @myVar;
 WHILE @@FETCH_STATUS = 0
 BEGIN
   --DO somthing;
 END;
+CLOSE myCursor;
+DEALLOCATE myCursor;
   
 - But @@FETCH_STATUS is global variable
 -- So if we use another Cursor within the loop, when inner loop is completed, @@FETCH_STATUS = -1, so the outer loop will also be closed.
