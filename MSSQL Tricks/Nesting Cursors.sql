@@ -10,7 +10,7 @@ END
 CLOSE myCursor;
 DEALLOCATE myCursor;
   
-- But @@FETCH_STATUS is global variable
+-- But @@FETCH_STATUS is global variable
 -- So if we use another Cursor within the loop, when inner loop is completed, @@FETCH_STATUS = -1, so the outer loop will also be closed.
 -- Fixing method is to use local variable instead of @@FETCH_STATUS
 OPEN myCursor;
