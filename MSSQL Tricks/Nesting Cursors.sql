@@ -6,7 +6,7 @@ FETCH NEXT FROM myCursor INTO @myVar;
 WHILE @@FETCH_STATUS = 0
 BEGIN
   --DO somthing;
-END;
+END
 CLOSE myCursor;
 DEALLOCATE myCursor;
   
