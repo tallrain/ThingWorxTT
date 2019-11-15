@@ -1,4 +1,4 @@
-// Print file via Windows Default Printer
+// Print file via Windows Printer Dialog
 import java.io.*;
 import javax.print.*;
 import javax.print.attribute.*;
