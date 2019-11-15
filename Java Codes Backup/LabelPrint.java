@@ -1,6 +1,6 @@
 // Use Windows Default Printer
 
-imimport javax.print.Doc;
+import javax.print.Doc;
 import javax.print.DocFlavor;
 import javax.print.DocPrintJob;
 import javax.print.PrintException;
