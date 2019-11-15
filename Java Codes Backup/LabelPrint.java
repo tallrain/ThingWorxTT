@@ -38,7 +38,7 @@ public class LookupDefaultPrinter {
 }
 
 
-// 2. Use Network Printer
+// 2. Use Network Printer via Socket
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
