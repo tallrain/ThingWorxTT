@@ -1,5 +1,4 @@
-// Use Windows Default Printer
-
+// 1. Use Windows Default Printer
 import javax.print.Doc;
 import javax.print.DocFlavor;
 import javax.print.DocPrintJob;
@@ -37,6 +36,7 @@ public class LookupDefaultPrinter {
   runPrint(zpl);
  }
 }
+
 
 // 2. Use Network Printer
 import java.io.BufferedReader;
