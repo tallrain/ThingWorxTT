@@ -1,4 +1,4 @@
--- SELECT DATEADD(ss, -1, DATEADD(month, DATEDIFF(month, 0, getdate()), 0))
+-- SELECT DATEADD(month, DATEDIFF(month, -1, getdate()) - 2, 0)
 
 CREATE FUNCTION [dbo].[GET_LAST_MONTH_START] ()  
 RETURNS int  
