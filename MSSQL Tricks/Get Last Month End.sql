@@ -1,3 +1,5 @@
+-- SELECT DATEADD(ss, -1, DATEADD(month, DATEDIFF(month, 0, getdate()), 0))
+
 CREATE FUNCTION [dbo].[GET_LAST_MONTH_END] ()  
 RETURNS int  
 WITH EXECUTE AS CALLER  
