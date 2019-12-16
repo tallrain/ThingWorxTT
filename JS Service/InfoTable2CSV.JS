@@ -1,4 +1,5 @@
 // InfoTable2CSV: Service to convert InfoTable to CSV, to display data into Dygraph widget
+// Developed by Tallrain, Aug 2019
 // Input: myInfoTable:InfoTable without DataShape
 // Output: TEXT
 // Note 1: The name of Datetime field is always 'TIME', which is 1st field for Dygraph
