@@ -36,7 +36,6 @@ for (var x=0; x < tableLength; x++) {
     //Your code here
 }
 
-
 bar1 = bar1 + sd*0.5;
 bar2 = bar2 + sd*0.5;
 bar3 = bar3 + sd*0.5;
@@ -44,7 +43,6 @@ bar4 = bar4 + sd*0.5;
 bar5 = bar5 + sd*0.5;
 bar6 = bar6 + sd*0.5;
 bar7 = bar7 + sd*0.5;
-
 
 // Output data
 var params = {
