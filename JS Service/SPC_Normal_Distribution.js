@@ -20,8 +20,7 @@ var e = Math.E; //2.71828182846;
 var pi = Math.PI; // 3.14159265359;
 for (var i=1; i <= 13; i++) {
     var x = (i-7)/2;
-    x = u + x*sd;
-    
+    x = u + x*sd;    
     var dividend = Math.pow(e, 0-((x-u)*(x-u)/(2*sd*sd)));
     var divisor = sd*Math.sqrt(2*pi);
     var np = dividend/divisor;
@@ -37,6 +36,4 @@ for (var i=1; i <= 13; i++) {
 }
 
 var result = tempInfoTable;
-
-
 //var result = Math.pow(3,2);
