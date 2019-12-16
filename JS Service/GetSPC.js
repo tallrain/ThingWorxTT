@@ -1,3 +1,4 @@
+// Developed by Tallrain, Nov 2019
 // This Serive is to calculate SPC values of: Standard Deviation, Average, Cpu, Cpl, Cpk
 // Input - spcTable, with fields of:
     SPC1 - real SPC data
