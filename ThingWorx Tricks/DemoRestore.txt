@@ -8,6 +8,7 @@ Restore DB.
 ---- 4.2.2 Create thingworx DB
 ---- 4.2.3 Set mfg/thingworx DB property
 ---- 4.2.4 Restore thingworx DB by running --> psql -U twadmin -d thingworx -1 -f "C:\KBData\Bak\twdb.tw.bak200102.sql"
+Remove Analytics services from Windows --> sc delete ****
 Remove Analytics extensions.
 Remove Analytics App key.
 Install Analytics Server.
