@@ -11,7 +11,5 @@ Restore DB.
 Remove Analytics services from Windows --> sc delete ****
 Remove Analytics extensions.
 Remove&Create Analytics App key.
-Install Analytics Server.
-Install Analytics Platform.
-Install Analytics Extension.
+Install Analytics Server, including Analytics Extension.
 Backup DB.
