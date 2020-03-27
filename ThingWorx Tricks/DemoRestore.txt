@@ -1,0 +1,10 @@
+Uninstall Thingworx MFG, Gateway.
+Delete all PTC nodes in regeistry.
+Install Thingworx MFG.
+Restore DB.
+Remove Analytics extensions.
+Remove Analytics App key.
+Install Analytics Server.
+Install Analytics Platform.
+Install Analytics Extension.
+Backup DB.
