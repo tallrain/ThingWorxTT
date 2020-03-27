@@ -1,5 +1,6 @@
 Uninstall Thingworx MFG, Gateway.
 Delete all PTC nodes in regeistry.
+Remove Analytics services from Windows --> sc delete ****
 Install Thingworx MFG.
 Restore DB.
 -- 4.1 Restore MFG DB by pgAdmin
@@ -8,7 +9,6 @@ Restore DB.
 ---- 4.2.2 Create thingworx DB
 ---- 4.2.3 Set mfg/thingworx DB property
 ---- 4.2.4 Restore thingworx DB by running --> psql -U twadmin -d thingworx -1 -f "C:\KBData\Bak\twdb.tw.bak200102.sql"
-Remove Analytics services from Windows --> sc delete ****
 Remove Analytics extensions.
 Remove&Create Analytics App key.
 Install Analytics Server, including Analytics Extension.
