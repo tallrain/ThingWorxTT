@@ -1,3 +1,4 @@
+0. Set PlatformSubsystem.Allow Applicaiton key as URL Parameter = true.
 1. Create user for login and view.
 2. Create AppKey for the user.
 3. Grant Permission of Mashup's Visibility and Run Time to user.
