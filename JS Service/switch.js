@@ -8,3 +8,20 @@ switch(variable) {
   default:
     command for other cases;
 }
+
+var tmp = "";
+switch(y) {
+    case 1:
+    	tmp = "a selected"; 
+        break;
+    case 2:
+    	tmp = "b selected"; 
+        break;
+    case y>2:
+    	tmp = "c selected"; 
+        break;  
+    default:
+        tmp = "";
+        break;
+}
+var result = tmp;
