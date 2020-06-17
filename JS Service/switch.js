@@ -25,3 +25,20 @@ switch(y) {
       break;
 }
 var result = tmp;
+
+var tmp = "";
+switch(true) {
+    case y == 1:
+    	tmp = "a selected"; 
+        break;
+    case y == 2:
+    	tmp = "b selected"; 
+        break;
+    case y > 2:
+    	tmp = "c selected"; 
+        break;  
+    default:
+        tmp = "";
+        break;
+}
+var result = tmp;
