@@ -1,6 +1,6 @@
 try {
   // command
-  throw "custom message";
+  throw "custom error message";
 } catch(err) {
   logger.error(errorMsg);
 } finally {
