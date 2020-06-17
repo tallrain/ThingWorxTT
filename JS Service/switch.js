@@ -13,15 +13,15 @@ var tmp = "";
 switch(y) {
     case 1:
     	tmp = "a selected"; 
-        break;
+      break;
     case 2:
     	tmp = "b selected"; 
-        break;
-    case y>2:
+      break;
+    case 3:
     	tmp = "c selected"; 
-        break;  
+      break;  
     default:
-        tmp = "";
-        break;
+      tmp = "";
+      break;
 }
 var result = tmp;
