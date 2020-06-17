@@ -1,0 +1,15 @@
+// value compare
+== equal
+=== equal with same type
+!= not equal
+!== not equal, or not same type
+> great than
+=> equal to or great than
+< less than
+<= less than or equal to
+? decison // ???
+
+// logic compare
+%% and
+|| or
+! not
