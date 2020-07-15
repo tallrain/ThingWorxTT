@@ -3,3 +3,12 @@ To enable passing Mashup Parameters through Contained Mashup, we need to set:
 
 Which is same as URL parameter: __enableWC=true.
 Here WC = Web Component
+
+Thingworx Help doc:
+https://support.ptc.com/help/thingworx_hc/thingworx_8_hc/en/index.html#page/ThingWorx/Help/Composer/System/Subsystems/PlatformSubsystem.html
+Setting: Enable Beta Mashup Features
+Base Type: BOOLEAN
+Default: false
+Notes:
+Allows web component widgets and their associated resources to be loaded into mashups at run time. Leaving this option as false should result in improved performance, especially when rendering Mashups in MS Internet Explorer. If false, any beta widgets will not display in run time.
+If a mashup is launched from Mashup Builder or Composer, beta widgets will be enabled by default via the inclusion of the URL parameter __enableWC. This parameter can be used to override this platform subsystem setting by appending it to the URL. For example: <host>:<port>/Thingworx/Runtime/index.html#mashup=<mashup-name>&__enableWC
