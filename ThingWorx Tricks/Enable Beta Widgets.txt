@@ -1,4 +1,4 @@
-To enable passing Mashup Parameters through Contained Mashup, we need to set:
+To enable beta widgets, we need to set:
 (Subsystem) PlatformSubsystem.Enable Beta Mashup Features = True
 
 Which is same as URL parameter: __enableWC=true.
