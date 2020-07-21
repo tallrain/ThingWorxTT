@@ -4,4 +4,5 @@ var json1 = {
     c:3
 };
 // var result = json1.a;
+var x = a;
 var result = json1[x];
