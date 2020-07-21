@@ -13,6 +13,6 @@
             "InternalAesCryptographicKeyLength": 128,
             "Storage": "/ThingworxStorage",
             "ScriptTimeout": 30
-          }
-	  }
+        }
+    }
 }
