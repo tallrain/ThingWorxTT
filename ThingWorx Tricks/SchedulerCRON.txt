@@ -16,5 +16,5 @@ G - Year(xxxx)
 / - every x values
 
 3.Example:
-0 0 3? * SAT *
+0 0 3 ? * SAT *
 Means: at 3:00:00 each Saturday, every month, every year
