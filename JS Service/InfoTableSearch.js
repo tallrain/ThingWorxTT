@@ -1,3 +1,4 @@
+// Method 1
 var params75 = {
   fieldName: "name" /* STRING */,
   isCaseSensitive: false /* BOOLEAN */,
@@ -17,3 +18,10 @@ if (divisionNameFound === 0) {
     standAlone:0
   });     
 }	
+
+// Method 2
+var Search = new Object();
+Search.ID = 2;
+Search.Name = "Walter White";
+//var row = me.Records.Filter(Search);
+var row = me.Records.Find(Search);
