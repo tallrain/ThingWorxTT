@@ -37,7 +37,7 @@ Sub Manual_Orders()
 
 ' Add Manual Orders
     MM = Worksheets("Manual_Orders").Cells(1, 1)
-    cnn1.ConnectionString = "driver={SQL Server};server=szvs0010\kbfdm;uid=kbfdm;pwd=F!d@m3p4;database=kbs_fdm"
+    cnn1.ConnectionString = "driver={SQL Server};server=szvs0010\kbfdm;uid=kbfdm;pwd=********;database=kbs_fdm"
     cnn1.ConnectionTimeout = 30
     cnn1.Open
 '    Set mobjConn = New ADODB.Connection
