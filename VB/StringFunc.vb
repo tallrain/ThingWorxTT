@@ -1,0 +1,5 @@
+    leng = Len(SS1)
+    i1 = InStr(1, SS1, "$TC_TP1[")
+    TN = Left(SS9, i2 - 1)
+    SS9 = Right(SS1, leng - i1 - 7)
+    SS1 = Mid(SS2, i1, i2 - i1)
