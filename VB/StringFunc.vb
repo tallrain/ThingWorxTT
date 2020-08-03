@@ -5,3 +5,4 @@
     SS1 = Mid(SS2, i1, i2 - i1)
     Tool1 = Trim(Tool1)
     yy = UCase(yy)
+    a = CStr(11)
