@@ -29,7 +29,7 @@ var params1 = {
 	useProxy: undefined /* BOOLEAN */,
 	withCookies: undefined /* BOOLEAN */,
 	proxyHost: undefined /* STRING */,
-    	url: "http://thingworx.corp.knorr-bremse.com/Thingworx/Things/TT_ANALYTICS_DEMO_INPUT_THING/Properties?appKey=bd514340-82bd-4508-b52e-4c1a77d64f3b",
+    	url: "http://thingworx.corp.knorr-bremse.com/Thingworx/Things/TT_ANALYTICS_DEMO_INPUT_THING/Properties?appKey=xxx",
     	timeout: undefined /* NUMBER */,
 	proxyPort: undefined /* INTEGER */,
 	password: undefined /* STRING */,
