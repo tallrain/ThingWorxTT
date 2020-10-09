@@ -18,7 +18,7 @@ Sub Get_Location()
               
     Set cn = New Connection
     Set rs = New Recordset
-    cn.ConnectionString = "Driver={Microsoft Access Driver (*.mdb)};Dbq=w:\MAPP\TMS\DataBase\TMS.mdb;Uid=Admin;Pwd=5238;Data Source=tms;CHARSET=UTF8"
+    cn.ConnectionString = "Driver={Microsoft Access Driver (*.mdb)};Dbq=w:\MAPP\TMS\DataBase\TMS.mdb;Uid=Admin;Pwd=****;Data Source=tms;CHARSET=UTF8"
     'w:\MAPP\TMS\DataBase\TMS.mdb
     'C:\KBData\KB\DM\KBSZ\Tool\TMS\DataBase\TMS.mdb
     '
