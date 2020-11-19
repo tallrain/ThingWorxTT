@@ -1,6 +1,8 @@
 Declare @getTables CURSOR;
 Declare @TableName varchar(255);
 Declare @command nvarchar(4000);
+PRINT(GETDATE());
+PRINT('Rebuilding Index started.');
 SET @getTables = CURSOR for SELECT name FROM sys.objects WHERE type = (N'U');
 
 OPEN @getTables;
@@ -21,3 +23,5 @@ OPEN @getTables;
 	END;
 CLOSE @getTables;
 DEALLOCATE @getTables; 
+PRINT(GETDATE());
+PRINT('Rebuilding Index completed.');
