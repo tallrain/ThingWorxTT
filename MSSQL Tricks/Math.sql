@@ -1,0 +1,8 @@
+CAST(5 AS FLOAT) --> INT TO FLOAT
+5/2 = 2 --> Keep Int part
+5.0/2 = 2.500000 --> Result as Float
+CAST(5 AS FLOAT)/2 = 2.5
+ROUND(CAST(5 AS FLOAT)/2,0) = 3
+ROUND(CAST(5 AS FLOAT)/2,1) = 2.5
+CEILING(4.4) = 5
+FLOOR(4.8) = 4
