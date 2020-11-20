@@ -7,16 +7,19 @@ SELECT @DT = CONVERT(NVARCHAR, GETDATE(), 121);	--YYYY-MM-DD HH:MI:SS
 PRINT(@DT);
 PRINT('Rebuilding Index started.');
 PRINT("");
-SET @getTables = CURSOR for SELECT name FROM sys.objects WHERE type = (N'U');
+--SET @getTables = CURSOR for SELECT name FROM sys.objects WHERE type = (N'U');
+
+SET @getTables = CURSOR for
+SELECT TableName
+FROM DBO.VIEW_TEMP_TT_TABLES_TO_REBUILD_INDEX;
 
 OPEN @getTables;
 	FETCH NEXT FROM @getTables into @TableName
 	WHILE @@FETCH_STATUS = 0
 	BEGIN;
-		--set @command = N'ALTER INDEX ALL ON ' + @TableName + N' REORGANIZE;';
 		SELECT @DT = CONVERT(NVARCHAR, GETDATE(), 121);	--YYYY-MM-DD HH:MI:SS
 		PRINT(@DT);				
-		set @command = N'ALTER INDEX ALL ON ' + @TableName + N' REBUILD WITH (ONLINE=ON);';
+		set @command = N'ALTER INDEX ALL ON ' + @TableName + N' REBUILD;';	-- WITH (ONLINE=ON);'; for enterprise version only
 		PRINT(@command);
 		PRINT("");
 		BEGIN TRY  
@@ -30,5 +33,4 @@ OPEN @getTables;
 CLOSE @getTables;
 DEALLOCATE @getTables; 
 PRINT(@DT);
-PRINT('Rebuilding Index started.');
 PRINT('Rebuilding Index completed.');
