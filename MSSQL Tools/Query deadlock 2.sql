@@ -1,3 +1,3 @@
 EXEC sp_who2
 
--- Check BlkBy column
+--Status=SUSPENDED, or BlkBy IS NOT NUL
