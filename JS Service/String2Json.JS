@@ -1,4 +1,6 @@
 var json = JSON.parse(StringJSON);
+//var tmp = json.Entities; //read a node value
+//var result = JSON.stringify(tmp); //convert json to string
 
 var params = {
 	json: json /* JSON */
