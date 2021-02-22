@@ -1,2 +1,2 @@
 Manage jobs:
-*AnalyticsServer-DataThing
+*AnalyticsServer_DataThing
